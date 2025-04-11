@@ -15,7 +15,7 @@ export default function Document() {
           name="description" 
           content = {
             "Buy and sell properties anywhere, anytime in South Korea. | " +
-            "Покупайте и продавайте недвижимость в любом месте и в любое время в Южной Корее. | " +
+            "Покупайте и продавайте недвижимость в любом месте и в любое время в Южной Korea. | " +
             "한국에서 언제 어디서나 부동산을 사고팔 수 있습니다. | " 
           }
         />

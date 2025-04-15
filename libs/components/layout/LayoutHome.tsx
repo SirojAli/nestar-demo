@@ -3,6 +3,9 @@ import Head from "next/head";
 import Top from "../Top";
 import Footer from "../Footer";
 import HeaderFilter from "../homepage/HeaderFilter";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const withLayoutMain = (Component: any) => {
   return (props: any) => {
@@ -30,7 +33,7 @@ const withLayoutMain = (Component: any) => {
           <Stack id={"footer"}>
             <Footer/>
           </Stack>
-          
+
         </Stack>
     </>
     )

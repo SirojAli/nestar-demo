@@ -12,7 +12,6 @@ const PopularProperties = ({ initialInput, ...props }: any) => {
     <Stack className={"popular-properties"}>
       <Stack className={"container"}>
 
-        {/* Info Box */}
         <Stack className={"info-box"}>
           <Box className={"left"}>
             <span>Popular Properties</span>
@@ -28,7 +27,6 @@ const PopularProperties = ({ initialInput, ...props }: any) => {
           </Box>
         </Stack>
 
-        {/* Card Box */}
         <Stack className={"card-box"}>
           <Swiper
             className={"popular-property-swiper"}

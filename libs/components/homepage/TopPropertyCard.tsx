@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Divider, Typography } from "@mui/material";
+import { Stack, Box, Divider, Typography } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
@@ -10,10 +10,15 @@ const TopPropertyCard = () => {
       <Box
         className={"card-img"}
         style={{
-          backgroundImage: `url("/img/banner/types/apartment.webp")`,
+            backgroundImage: `url("/img/banner/types/apartment.webp")`,
         }}
       >
-        <div>$42000</div>
+        <div className={"status"}>
+          <img src="/img/icons/electricity.svg" alt="" />
+          <span>Top</span>
+        </div>
+
+        <div className={"price"}>$420000</div>
       </Box>
       <Box className={"info"}>
         <strong className={"title"}>Run Will Buildings</strong>
@@ -21,7 +26,7 @@ const TopPropertyCard = () => {
         <div className={"options"}>
           <div>
             <img src="/img/icons/bed.svg" alt="" />
-            <span>3 beds</span>
+            <span>3 bed</span>
           </div>
           <div>
             <img src="/img/icons/room.svg" alt="" />
@@ -36,15 +41,15 @@ const TopPropertyCard = () => {
         <div className={"bott"}>
           <p>Rent</p>
           <div className={"view-like-box"}>
-            <IconButton className={"default"}>
+            <IconButton color={"default"}>
               <RemoveRedEyeIcon />
             </IconButton>
             <Typography className={"view-cnt"}>120</Typography>
-            <IconButton className={"default"}>
-              <FavoriteIcon />
+            <IconButton color={"default"}>
+              <FavoriteIcon style={{ color: "red" }}/>
             </IconButton>
             <Typography className={"view-cnt"}>200</Typography>
-          </div>
+            </div>
         </div>
       </Box>
     </Stack>

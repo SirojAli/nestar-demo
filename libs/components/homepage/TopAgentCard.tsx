@@ -6,51 +6,15 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 
 const TopAgentCard = () => {
   return (
-    <Stack className={"popular-card-box"}>
-      {/* Card Image */}
-      <Box
-        className={"card-img"}
-        style={{
-          backgroundImage: `url("/img/banner/types/apartment.webp")`,
-        }}
-      >
-        <div>$42000</div>
-
-      {/* Card Info */}
-      </Box>
-      <Box className={"info"}>
-        <strong className={"title"}>Run Will Buildings</strong>
-        <p className={"desc"}>Seoul Gangnam Apartments</p>
-        <div className={"options"}>
-          <div>
-            <img src="/img/icons/bed.svg" alt="" />
-            <span>3 beds</span>
-          </div>
-          <div>
-            <img src="/img/icons/room.svg" alt="" />
-            <span>7 rooms</span>
-          </div>
-          <div>
-            <img src="/img/icons/expand.svg" alt="" />
-            <span>250 m2</span>
-          </div>
-        </div>
-        <Divider sx={{ mt: "15px", mb: "17px" }} />
-        <div className={"bott"}>
-          <p>Rent</p>
-          <div className={"view-like-box"}>
-            <IconButton className={"default"}>
-              <RemoveRedEyeIcon/>
-            </IconButton>
-            <Typography className={"view-cnt"}>120</Typography>
-            <IconButton className={"default"}>
-              <RemoveRedEyeIcon/>
-            </IconButton>
-            <Typography className={"view-cnt"}>200</Typography>
-          </div>
-        </div>
-      </Box>
-    </Stack>
+      <Stack className={"card"}>
+          <Box className={"image-box"}>
+              <img src="/img/profile/girl.svg" alt="" className={"image"} />
+          </Box>
+          <Box className={"info"}>
+              <strong className={"name"}>Martin</strong>
+              <p className={"role"}>Agent</p>
+          </Box>
+      </Stack>
   );
 };
 

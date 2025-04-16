@@ -1,23 +1,21 @@
-import React, { useState} from "react";
-import { Box, Stack } from "@mui/material";
+import React, { useState } from "react";
+import { Stack, Box } from "@mui/material";
 import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TrendPropertyCard from "./TrendPropertyCard";
 
-const TrendProperties = ({ initialInput, ...props }: any) => {
-  const [trendProperties, setTrendProperties] = useState<number[]>([
+const TrendProperties = () => {
+  const [ trendProperties, setTrendProperties ] = useState<number[]>([
     1, 2, 3, 4, 5, 6, 7,
-  ]);   // 60-row 
+  ]);
 
-  return ( 
+  return (
     <Stack className={"trend-properties"}>
       <Stack className={"container"}>
-
-        {/* Info Box */}
         <Stack className={"info-box"}>
           <Box className={"left"}>
-            <span>Trend Properties</span>
+            <span>Trend properties</span>
             <p>Trend is based on likes</p>
           </Box>
           <Box className={"right"}>
@@ -28,32 +26,30 @@ const TrendProperties = ({ initialInput, ...props }: any) => {
             </div>
           </Box>
         </Stack>
-
-        {/* Card Box */}
         <Stack className={"card-box"}>
           {trendProperties.length === 0 ? (
             <Box className={"empty-list"}>Trends Empty</Box>
           ) : (
             <Swiper
-              className={"trend-property-swiper"}
-              slidesPerView={"auto"}
-              spaceBetween={15}
-              navigation={{
-                nextEl: ".swiper-trend-next",
-                prevEl: ".swiper-trend-prev",
-              }}
-              pagination={{
-                el: ".swiper-trend-pagination",
-              }}
-            >
-              {trendProperties.map((property, index) => {
-                return (
-                  <SwiperSlide key={index} className={"trend-property-slide"}>
-                    <TrendPropertyCard />
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
+            className={"trend-property-swiper"}
+            slidesPerView={"auto"}
+            spaceBetween={15}
+            navigation={{
+              nextEl: ".swiper-trend-next",
+              prevEl: ".swiper-trend-prev",
+            }}
+            pagination={{
+              el: ".swiper-trend-pagination",
+            }}
+        >
+            {trendProperties.map((property, index) => {
+              return (
+                <SwiperSlide key={index} className ={"trend-property-slide"}>
+                  <TrendPropertyCard />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
           )}
         </Stack>
       </Stack>

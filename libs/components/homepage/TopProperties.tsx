@@ -5,7 +5,7 @@ import EastIcon from "@mui/icons-material/East";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TopPropertyCard from "./TrendPropertyCard";
 
-const TopProperties = ({ initialInput, ...props }: any) => {
+const TopProperties = ({ initialInput = [1, 2, 3, 4, 5, 6, 7], ...props }: any) => {
   const [topProperties, setTopProperties] = useState<number[]>(initialInput);
 
   return (
@@ -54,8 +54,8 @@ const TopProperties = ({ initialInput, ...props }: any) => {
   );
 };
 
-TopProperties.defaultProps = {
-  initialInput: [1, 2, 3, 4, 5, 6, 7]
-};
+// TopProperties.defaultProps = {
+//   initialInput: [1, 2, 3, 4, 5, 6, 7]
+// };
 
 export default TopProperties;

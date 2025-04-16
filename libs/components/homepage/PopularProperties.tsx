@@ -1,18 +1,17 @@
 import React, { useState} from "react";
 import { Box, Stack } from "@mui/material";
-import WestIcon from "@mui/icons-material/West";
-import EastIcon from "@mui/icons-material/East";
 import { Swiper, SwiperSlide } from "swiper/react";
 import PopularPropertyCard from "./PopularPropertyCard";
 import Link from "next/link";
 
-const PopularProperties = ({ initialInput, ...props }: any) => { // 59row
+const PopularProperties = ({ initialInput, ...props }: any) => { 
   const [popularProperties, setPopularProperties] = 
-    useState<number[]>(initialInput);
+    useState<number[]>(initialInput);  // 59row
 
   return ( 
     <Stack className={"popular-properties"}>
       <Stack className={"container"}>
+
         {/* Info Box */}
         <Stack className={"info-box"}>
           <Box className={"left"}>

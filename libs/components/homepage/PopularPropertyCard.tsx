@@ -7,6 +7,7 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 const PopularPropertyCard = () => {
   return (
     <Stack className={"popular-card-box"}>
+      
       {/* Card Image */}
       <Box
         className={"card-img"}

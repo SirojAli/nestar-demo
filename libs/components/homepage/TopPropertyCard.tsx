@@ -37,11 +37,11 @@ const TopPropertyCard = () => {
           <p>Rent</p>
           <div className={"view-like-box"}>
             <IconButton className={"default"}>
-              <RemoveRedEyeIcon/>
+              <RemoveRedEyeIcon />
             </IconButton>
             <Typography className={"view-cnt"}>120</Typography>
             <IconButton className={"default"}>
-              <RemoveRedEyeIcon/>
+              <FavoriteIcon />
             </IconButton>
             <Typography className={"view-cnt"}>200</Typography>
           </div>

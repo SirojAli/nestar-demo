@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import { Box, Button, Container, Pagination, Stack, Typography } from "@mui/material";
-import { green, brown } from "@mui/material/colors";
 import { NextPage } from "next";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Filter from "@/libs/components/property/Filter";

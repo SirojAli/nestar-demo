@@ -23,11 +23,11 @@ const PropertyCard = () => {
         >
           <img src={imagePath} alt="" />
         </Link>
-        <Box>
+        <Box className={"top-badge"}>
           <img src="/img/icons/electricity.svg" alt="" />
           <Typography>TOP</Typography>
         </Box>
-        <Box>
+        <Box className={"price-box"}>
           <Typography>$250000</Typography>
         </Box>
       </Stack>

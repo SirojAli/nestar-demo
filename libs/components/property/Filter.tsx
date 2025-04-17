@@ -188,7 +188,7 @@ const Filter = () => {
 
       {/* Search by Price */}
       <Stack className={"find-your-home"} mb={"30px"}>
-        <Typography className={"title"}>Square meter</Typography>
+        <Typography className={"title"}>Price range</Typography>
         <Stack className={""}>
           <input
             type="number"

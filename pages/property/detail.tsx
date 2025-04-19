@@ -1,7 +1,7 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
-import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 import { Box, Container, Stack } from "@mui/material";
 import { green, brown } from "@mui/material/colors";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 
 const PropertyDetail = () => {
 	const device = useDeviceDetect();

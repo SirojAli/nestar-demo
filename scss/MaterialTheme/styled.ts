@@ -1,35 +1,35 @@
-import { styled, alpha, Theme } from '@mui/material/styles';
-import Badge from '@mui/material/Badge';
-import MuiAppBar from '@mui/material/AppBar';
-import TextField from '@mui/material/TextField';
-import MuiDrawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import Switch, { SwitchProps } from '@mui/material/Switch';
+import { styled, alpha, Theme } from "@mui/material/styles";
+import Badge from "@mui/material/Badge";
+import MuiAppBar from "@mui/material/AppBar";
+import TextField from "@mui/material/TextField";
+import MuiDrawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import Switch, { SwitchProps } from "@mui/material/Switch";
 
 export const RippleBadge = styled(Badge)(({ theme }) => ({
-	'& .MuiBadge-badge': {
-		backgroundColor: '#44b700',
-		color: '#44b700',
+	"& .MuiBadge-badge": {
+		backgroundColor: "#44b700",
+		color: "#44b700",
 		boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-		'&::after': {
-			position: 'absolute',
-			top: '-1px',
-			left: '-1px',
-			width: '100%',
-			height: '100%',
-			borderRadius: '50%',
-			animation: 'ripple 1.2s infinite ease-in-out',
-			border: '1px solid currentColor',
+		"&::after": {
+			position: "absolute",
+			top: "-1px",
+			left: "-1px",
+			width: "100%",
+			height: "100%",
+			borderRadius: "50%",
+			animation: "ripple 1.2s infinite ease-in-out",
+			border: "1px solid currentColor",
 			content: '""',
 		},
 	},
-	'@keyframes ripple': {
-		'0%': {
-			transform: 'scale(.8)',
+	"@keyframes ripple": {
+		"0%": {
+			transform: "scale(.8)",
 			opacity: 1,
 		},
-		'100%': {
-			transform: 'scale(2.4)',
+		"100%": {
+			transform: "scale(2.4)",
 			opacity: 0,
 		},
 	},
@@ -41,64 +41,64 @@ export const IOSSwitch = styled(Switch)(({ theme }) => ({
 	height: 26,
 	padding: 0,
 	fontSize: 12,
-	'& .MuiSwitch-switchBase': {
+	"& .MuiSwitch-switchBase": {
 		padding: 0,
 		margin: 2,
-		transitionDuration: '200ms',
-		'&.Mui-checked': {
-			transform: 'translateX(16px)',
-			color: '#fff',
-			'& + .MuiSwitch-track': {
-				backgroundColor: theme.palette.mode === 'dark' ? '#2ECA45' : '#E92C28',
+		transitionDuration: "200ms",
+		"&.Mui-checked": {
+			transform: "translateX(16px)",
+			color: "#fff",
+			"& + .MuiSwitch-track": {
+				backgroundColor: theme.palette.mode === "dark" ? "#2ECA45" : "#E92C28",
 				opacity: 1,
 				border: 0,
 			},
-			'&.Mui-disabled + .MuiSwitch-track': {
+			"&.Mui-disabled + .MuiSwitch-track": {
 				opacity: 0.5,
 			},
 		},
-		'&.Mui-focusVisible .MuiSwitch-thumb': {
-			color: '#33cf4d',
-			border: '6px solid #fff',
+		"&.Mui-focusVisible .MuiSwitch-thumb": {
+			color: "#33cf4d",
+			border: "6px solid #fff",
 		},
-		'&.Mui-disabled .MuiSwitch-thumb': {
-			color: theme.palette.mode === 'light' ? theme.palette.grey[100] : theme.palette.grey[600],
+		"&.Mui-disabled .MuiSwitch-thumb": {
+			color: theme.palette.mode === "light" ? theme.palette.grey[100] : theme.palette.grey[600],
 		},
-		'&.Mui-disabled + .MuiSwitch-track': {
-			opacity: theme.palette.mode === 'light' ? 0.7 : 0.3,
+		"&.Mui-disabled + .MuiSwitch-track": {
+			opacity: theme.palette.mode === "light" ? 0.7 : 0.3,
 		},
 	},
-	'& .MuiSwitch-thumb': {
-		boxSizing: 'border-box',
+	"& .MuiSwitch-thumb": {
+		boxSizing: "border-box",
 		width: 22,
 		height: 22,
 	},
-	'& .MuiSwitch-track': {
+	"& .MuiSwitch-track": {
 		borderRadius: 26 / 2,
-		backgroundColor: theme.palette.mode === 'light' ? '#E9E9EA' : '#39393D',
+		backgroundColor: theme.palette.mode === "light" ? "#E9E9EA" : "#39393D",
 		opacity: 1,
-		transition: theme.transitions.create(['background-color'], {
+		transition: theme.transitions.create(["background-color"], {
 			duration: 500,
 		}),
 	},
-	'&.MuiFormControlLabel-label': {
+	"&.MuiFormControlLabel-label": {
 		fontSize: 12,
 	},
 }));
 
 // TEXT FIELD STYLE
 export const RedditTextField = styled(TextField)(({ theme }) => ({
-	'& .MuiFilledInput-root': {
-		border: '1px solid #eee',
-		overflow: 'hidden',
+	"& .MuiFilledInput-root": {
+		border: "1px solid #eee",
+		overflow: "hidden",
 		borderRadius: 4,
-		backgroundColor: theme.palette.mode === 'light' ? '#fff' : '#fff',
-		transition: theme.transitions.create(['border-color', 'background-color', 'box-shadow']),
-		'&:hover': {
-			backgroundColor: 'transparent',
+		backgroundColor: theme.palette.mode === "light" ? "#fff" : "#fff",
+		transition: theme.transitions.create(["border-color", "background-color", "box-shadow"]),
+		"&:hover": {
+			backgroundColor: "transparent",
 		},
-		'&.Mui-focused': {
-			backgroundColor: 'transparent',
+		"&.Mui-focused": {
+			backgroundColor: "transparent",
 			boxShadow: `${alpha(theme.palette.primary.main, 0.25)} 0 0 0 2px`,
 			borderColor: theme.palette.primary.main,
 		},
@@ -107,13 +107,13 @@ export const RedditTextField = styled(TextField)(({ theme }) => ({
 
 // TEXT FIELD STYLE
 export const StyleButton = styled(Button)(({ theme }) => ({
-	'& .Button-root': {
-		border: '1px solid #eee',
-		overflow: 'hidden',
-		backgroundColor: theme.palette.mode === 'light' ? '#fff' : '#fff',
-		transition: theme.transitions.create(['border-color', 'background-color', 'box-shadow']),
-		'&:hover': {
-			backgroundColor: 'transparent',
+	"& .Button-root": {
+		border: "1px solid #eee",
+		overflow: "hidden",
+		backgroundColor: theme.palette.mode === "light" ? "#fff" : "#fff",
+		transition: theme.transitions.create(["border-color", "background-color", "box-shadow"]),
+		"&:hover": {
+			backgroundColor: "transparent",
 		},
 	},
 }));
@@ -123,58 +123,58 @@ export const StyleButton = styled(Button)(({ theme }) => ({
 ////////////////////////////
 const openedMixin = (theme: Theme, drawerwidth: number) => ({
 	width: drawerwidth,
-	transition: theme.transitions.create('width', {
+	transition: theme.transitions.create("width", {
 		easing: theme.transitions.easing.sharp,
 		duration: theme.transitions.duration.enteringScreen,
 	}),
-	overflowX: 'hidden',
+	overflowX: "hidden",
 });
 
 const closedMixin = (theme: Theme) => ({
-	transition: theme.transitions.create('width', {
+	transition: theme.transitions.create("width", {
 		easing: theme.transitions.easing.sharp,
 		duration: theme.transitions.duration.leavingScreen,
 	}),
-	overflowX: 'hidden',
+	overflowX: "hidden",
 	width: `calc(${theme.spacing(7)} + 1px)`,
-	[theme.breakpoints.up('sm')]: {
+	[theme.breakpoints.up("sm")]: {
 		width: `calc(${theme.spacing(8)} + 1px)`,
 	},
 });
 
 export const AdminAppBar = styled(MuiAppBar, {
-	shouldForwardProp: (prop) => prop !== 'open',
+	shouldForwardProp: (prop) => prop !== "open",
 	// @ts-ignore
 })(({ theme, open, drawerwidth }) => ({
 	zIndex: theme.zIndex.drawer + 1,
-	transition: theme.transitions.create(['width', 'margin'], {
+	transition: theme.transitions.create(["width", "margin"], {
 		easing: theme.transitions.easing.sharp,
 		duration: theme.transitions.duration.leavingScreen,
 	}),
 	...(open && {
 		marginLeft: drawerwidth,
 		width: `calc(100% - ${drawerwidth}px)`,
-		transition: theme.transitions.create(['width', 'margin'], {
+		transition: theme.transitions.create(["width", "margin"], {
 			easing: theme.transitions.easing.sharp,
 			duration: theme.transitions.duration.enteringScreen,
 		}),
 	}),
 }));
 
-export const AdminDrawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
+export const AdminDrawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== "open" })(
 	// @ts-ignore
 	({ theme, open, drawerwidth }) => ({
-		width: drawerwidth + 'px',
+		width: drawerwidth + "px",
 		flexShrink: 0,
-		whiteSpace: 'nowrap',
-		boxSizing: 'border-box',
+		whiteSpace: "nowrap",
+		boxSizing: "border-box",
 		...(open && {
 			...openedMixin(theme, drawerwidth),
-			'& .MuiDrawer-paper': openedMixin(theme, drawerwidth),
+			"& .MuiDrawer-paper": openedMixin(theme, drawerwidth),
 		}),
 		...(!open && {
 			...closedMixin(theme),
-			'& .MuiDrawer-paper': closedMixin(theme),
+			"& .MuiDrawer-paper": closedMixin(theme),
 		}),
 	}),
 );

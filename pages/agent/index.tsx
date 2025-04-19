@@ -4,12 +4,11 @@ import { useState } from "react";
 import { Box, Container, Stack } from "@mui/material";
 
 const AgentList: NextPage = () => {
-  return (
-    <div style={{ margin: "20px 0"}}>
-      <Stack className="container">AGENTS LIST</Stack>
-    </div>
-  )
+	return (
+		<div style={{ margin: "20px 0" }}>
+			<Stack className="container">AGENTS LIST</Stack>
+		</div>
+	);
 };
 
 export default withLayoutBasic(AgentList);
-

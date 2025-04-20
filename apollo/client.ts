@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
 // No Subscription required for develop process
 
 const httpLink = createHttpLink({
-	uri: "localhost:3007/graphql",
+	uri: "http://localhost:3007/graphql",
 });
 
 const client = new ApolloClient({
